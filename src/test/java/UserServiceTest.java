@@ -89,7 +89,6 @@ public class UserServiceTest {
             userService.dropUsersTable();
             userService.createUsersTable();
             userService.saveUser(testName, testLastName, testAge);
-            userService.saveUser("Igor", "Nikolaev", (byte) 20);
             userService.cleanUsersTable();
 
             if (userService.getAllUsers().size() != 0) {
